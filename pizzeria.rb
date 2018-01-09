@@ -27,27 +27,38 @@ end
 
 def total_amount(menu_nr, pizza_cnt)
   price = 0
-  if
-    menu_nr == 1
-    price = @pizza_salami
-  elsif
-    menu_nr == 2
-    price = @pizza_quattro_stagioni
-  elsif menu_nr == 3
-    price = @pizza_ham_cheese
-  else
-    price = @pizza_shoarma
-  end
+  price = @pizza_salami if menu_nr == '1'
+  price = @pizza_quattro_stagioni if menu_nr == '2'
+  price = @pizza_ham_cheese if menu_nr == '3'
+  price = @pizza_shoarma if menu_nr == '4'
 
   amount = price*pizza_cnt
 
-if amount > 20
-  amount = amount*0.9
+  if amount > 20
+      # Discount of 10% if over 20 Euro
+      amount *= 0.9
+    end
+    if amount < 10 && amount > 0
+      # Add delivery costs
+      amount += 2.5
+    end
+
+return amount
 end
 
-if amount < 10
-  amount = amount + 2.5
-end
 
-return amount 
+initialize_pizzas
+puts "Welcome to Pizza World!"
+
+name = customer_name
+puts "Hallo #{name.capitalize}, please choose the PIZZA: "
+show_menu
+menu_number, pizza_count = take_order
+
+total = total_amount menu_number, pizza_count
+if total > 0
+  puts "Thank you for your order. The total amount for your order is: #{total} Euro"
+  puts "Your order will be delivered in 20 minutes."
+else
+  puts "Oops, something went wrong. Please try again."
 end
