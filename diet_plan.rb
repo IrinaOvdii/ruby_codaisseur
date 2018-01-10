@@ -1,22 +1,3 @@
-=begin
-
-def ask(message)
-  print message
-  gets.chomp
-end
-
-puts "Please give me a following data: "
-
-age = ask("Age in years: ")
-height = ask("Height in centimeters ")
-weight = ask("Weight in kilograms: ")
-gender = ask("Gender (just put m or f)")
-level_a = ask("Put your activity level on a scale from 1 to 5:
-  \n1 - little or no exercise \2 - exercise/sports 1 - 3 times per week
-\n3 - exercise/sports 4 - 5 times per week \n4 - exercise/sports 6 - 7 times per week
-\n5 - very hard exercise/sports or physical job")
-
-=end
 
 def ask(message)
   print message
