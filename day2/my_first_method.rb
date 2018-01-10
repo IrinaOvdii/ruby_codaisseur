@@ -62,3 +62,7 @@ print "Put time: "
 @time = gets.chomp
 
 assign_work
+
+
+def com^
+end
