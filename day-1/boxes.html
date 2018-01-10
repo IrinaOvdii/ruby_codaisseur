@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Boxmodel Positioning</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .box-big {
+      position: relative;
+      display: inline-block;
+      background-color: blue;
+      height: 600px;
+      width: 400px;
+    }
+
+    .box-small {
+      position: absolute;
+      background-color: grey;
+      height: 20%;
+      width: 20%;
+    }
+
+    .box-small {
+      position: absolute;
+      background-color: grey;
+      height: 40%;
+      width: 40%;
+    }
+
+    .box-left-bottom {
+      left: 0;
+      bottom: 0;
+    }
+
+    .box-right-bottom {
+      right: 0;
+      bottom: 0;
+    }
+
+    .box-center-bottom {
+      left: 0;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box-big">
+    <div class="box-small box-left-bottom"></div>
+    <div class="box-small box-right-bottom"></div>
+  </div>
+  <div class="box-big">
+    <div class="box-medium box-center-bottom"></div>
+  </div>
+  <div class="box-big">
+    <div class="box-small box-left-bottom"></div>
+    <div class="box-small box-right-bottom"></div>
+  </div>
+
+</body>
+
+</html>

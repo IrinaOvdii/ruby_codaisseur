@@ -1,0 +1,200 @@
+/* css/styles.css */
+
+a {
+  text-decoration: none;
+}
+
+/* =================================
+  Centering Main Elements
+==================================== */
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.banner, footer {
+  text-align: center;
+}
+
+/* =================================
+  Adding Color
+==================================== */
+
+body {
+  color: #4A4A4A;
+}
+
+header a h1 {
+  color: #4A4A4A;
+}
+
+header nav a, header nav a:visited {
+  color: #f5b723;
+}
+
+header nav a:hover {
+  color: #00AA86;
+}
+
+.banner {
+  background-color: #D32F2F;
+}
+
+.banner h1, .banner h3 {
+  color: white;
+}
+
+.valley-card {
+  background-color: #ECECEC;
+}
+
+.valley-card a {
+  background-color: #D32F2F;
+  color: white;
+}
+
+.valley-card a:hover {
+  background-color: #4A4A4A;
+  color: white;
+}
+
+.valley-img-rond {
+  background-color: #67D8A8;
+}
+
+.li-race {
+  background-color: #ECECEC;
+}
+
+/* =================================
+  Selecting Fonts
+==================================== */
+
+body {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+header nav a {
+  font-size: 18px;
+}
+
+.banner h1 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.banner h3 {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+footer {
+  font-size: 16px;
+}
+
+/* =================================
+  Styling the Valleys Gallery
+==================================== */
+
+img {
+  max-width: 100%; /*fill the width of the parent container */
+  padding-top: 20px;
+}
+
+.valleys-gallery ul {
+  margin: 40px 0;
+  padding: 0;
+  list-style: none; /* remove bullet points */
+}
+
+.valleys-gallery ul li {
+  display: inline-block; /* list items appear next to each other */
+  width: 27%; /* split gallery in 3 columns */
+  margin: 1%;
+  padding: 2%;
+  border-radius: 4px;
+}
+
+.valley-img {
+  height: 150px;
+  overflow: hidden; /* hide image that goes over this height */
+  border-radius: 4px;
+}
+
+.valley-card a {
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+/* =================================
+  Building the Header & Navigation
+==================================== */
+
+.logo, nav {
+  display: inline-block; /* logo and nav will appear in same line */
+}
+
+.logo {
+  float: left; /* logo will appear at the left side of the header */
+}
+
+header nav {
+  float:right; /* logo will appear at the right side of the header */
+  margin-top: 15px;
+}
+
+.banner {
+  clear: both; /* allows banner to be clear of floated elements in header */
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  float: right;
+}
+
+/* =================================
+  RACE Page
+==================================== */
+.valley-img-rond {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
+.ul-race {
+  margin: 40px 0;
+  padding: 0;
+  list-style: none; /* remove bullet points */
+}
+
+.li-race {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.valleys-content {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.food {
+  list-style: none;
+  padding-left: 0;
+}
+
+.food-button {
+    background-color: #D32F2F;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+  }
